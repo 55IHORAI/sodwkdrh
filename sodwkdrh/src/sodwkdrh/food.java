@@ -12,39 +12,43 @@ public class food {
 		int[] inner = new int[dydfid];
 		
 		
-		while (door = true){
-			System.out.print(" ³ÖÀ»  À½½ÄÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä \n 0. ³ÃÀå°í ´İ±â 1.±èÄ¡ 2.°è¶õ 3.¹°  4.ÂüÄ¡ 5.¼Ò¼¼Áö ");
+		while (door == true){
+			System.out.print(" ë„£ì„  ìŒì‹ì„ ì…ë ¥í•´ì£¼ì„¸ìš” \n 0. ëƒ‰ì¥ê³  ë‹«ê¸° 1.ê¹€ì¹˜ 2.ê³„ë€ 3.ë¬¼  4.ì°¸ì¹˜ 5.ì†Œì„¸ì§€ ");
 			a = sc.nextInt();
 			if ( a == 0) {
 				door = false;
-				System.out.print("³ÃÀå°í ¹®À» ´İ½À´Ï´Ù");
+				System.out.print("ëƒ‰ì¥ê³  ë¬¸ì„ ë‹«ìŠµë‹ˆë‹¤");
 				break;}
 			else {
 				inner[i] = a;
 				i++;
 				if (i == 5) {
-					System.out.print("³ÃÀå°í¿¡ µé¾îÀÖ´Â ¸ñ·Ï : ");
+					System.out.print("ëƒ‰ì¥ê³ ì— ë“¤ì–´ìˆëŠ” ëª©ë¡ : ");
 					while( k < 5){
 						switch (inner[k]) {
 						case 1  :
-							System.out.print("±èÄ¡"); break;
+							System.out.print("ê¹€ì¹˜"); break;
 						case 2  :
-							System.out.print("°è¶õ"); break;
+							System.out.print("ê³„ë€"); break;
 						case 3  :
-							System.out.print("¹°"); break;
+							System.out.print("ë¬¼"); break;
 						case 4  :
-							System.out.print("ÂüÄ¡"); break;
+							System.out.print("ì°¸ì¹˜"); break;
 						case 5  :
-							System.out.print("¼Ò¼¼Áö"); break;
+							System.out.print("ì†Œì„¸ì§€"); break;
 						}
 						k++;
 
+				
 					}
+					System.out.println("ë¬¸ì„ ë‹«ìŠµë‹ˆë‹¤");
+					door = false;
+					
 				}
-				System.out.println("");
+				
+			
 			}
-			
-			
+
 		}
 
 	}
